@@ -44,6 +44,18 @@ namespace Work_with_file
                 }
             } // закрытие потока
 
+            //метод № 2
+            StreamWriter stw = new StreamWriter(@"C:\Users\васильева\Documents\Visual Studio 2015\Projects\Work_with_file\NewFile3.txt");
+            stw.Write("Hi");
+
+            CotyTo(file); // 4
+            stw.Close();
+
+        }
+
+        static void CotyTo(FileInfo fi) // 4
+        {
+            fi.CopyTo(@"C:\Users\васильева\Documents\Visual Studio 2015\Projects\Work_with_file\NewFile4.txt"); // копирование
         }
 
     }
