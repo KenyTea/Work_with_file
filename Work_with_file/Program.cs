@@ -11,6 +11,47 @@ namespace Work_with_file
     {
         static void Main(string[] args)
         {
+            #region Евгений
+            //string path2 = @"C:\Users\y.gertsen\Documents\New Text Document.txt";
+
+            //try
+            //{
+            //    Console.WriteLine("******считываем весь файл********");
+            //    using (StreamReader sr = new StreamReader(path2))
+            //    {
+            //        Console.WriteLine(sr.ReadToEnd());
+            //    }
+
+            //    Console.WriteLine();
+            //    Console.WriteLine("******считываем построчно********");
+            //    using (StreamReader sr = new StreamReader(path2, System.Text.Encoding.Default))
+            //    {
+            //        string line;
+            //        while ((line = sr.ReadLine()) != null)
+            //        {
+            //            Console.WriteLine(line);
+            //        }
+            //    }
+
+            //    Console.WriteLine();
+            //    Console.WriteLine("******считываем блоками********");
+            //    using (StreamReader sr = new StreamReader(path2, System.Text.Encoding.Default))
+            //    {
+            //        char[] array = new char[4];
+            //        // считываем 4 символа
+            //        sr.Read(array, 0, 4);
+
+            //        Console.WriteLine(array);
+            //    }
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
+
+            //Console.ReadLine();
+            #endregion
+
             //позволяет работать с файлами -  using System.IO;
             // class Stream - основной класс для работы с файлами
             // class FileStream - для чтение и записи.
