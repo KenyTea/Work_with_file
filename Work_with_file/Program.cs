@@ -55,11 +55,29 @@ namespace Work_with_file
             //позволяет работать с файлами -  using System.IO;
             // class Stream - основной класс для работы с файлами
             // class FileStream - для чтение и записи.
-            string path = Path.Combine(@"C:\Users\васильева\Documents\Visual Studio 2015\Projects\Work_with_file", "NewFile3.txt"); // 3
+           // string path = Path.Combine(@"C:\Users\васильева\Documents\Visual Studio 2015\Projects\Work_with_file", "NewFile3.txt"); // 3
 
 
-            NewFile(); // 1
-            NewFile2(); // 2
+           // NewFile(); // 1
+           // NewFile2(); // 2, 4
+
+            //создание директории
+
+            //DirectoryInfo dir1 = new DirectoryInfo(" . "); // привязка к рабочему каталогу
+            //dir1.Create();
+
+            DirectoryInfo dir = new DirectoryInfo(@"Dir"); // привязка C:\Users\васильева\Documents
+            dir.Create();
+
+            foreach (DirectoryInfo item in dir.GetDirectories())
+            {
+                Console.WriteLine(item.Name);
+                foreach (FileInfo item2 in dir.GetFiles())
+                {
+                    Console.WriteLine(item2.Name);
+                }
+            }
+
 
         }
 
